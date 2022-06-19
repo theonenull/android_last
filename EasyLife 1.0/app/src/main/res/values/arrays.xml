@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item>富强</item>
+        <item>民主</item>
+        <item>文明</item>
+        <item>和谐</item>
+    </string-array>
+</resources>

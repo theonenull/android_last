@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/nav_myself"
+            android:title="@string/personal_space_chinese_string"/>
+        <item
+            android:id="@+id/nav_picture_out_school"
+            android:title="@string/out_school_picture_chinese_string"/>
+        <item
+            android:id="@+id/show_weather"
+            android:title="@string/watch_weather"/>
+</menu>
