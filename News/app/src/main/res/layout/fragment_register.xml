@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="291dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="欢迎使用热点集讯,若您注册账号则默认您同意热点集讯的《社区管理条款》，请谨慎注册"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/validationCodeText" />
+
+    <com.example.news.ui.LoginEditTextView
+        android:id="@+id/emailText"
+        app:input_hint="邮箱"
+        app:input_icon="@drawable/email"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.example.news.ui.LoginEditTextView
+        android:id="@+id/registerPasswordText"
+        android:layout_width="230dp"
+        app:input_hint="密码"
+        android:layout_height="45dp"
+        app:input_icon="@drawable/password_register"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <com.example.news.ui.LoginEditTextView
+        android:id="@+id/validationCodeText"
+        app:input_hint="验证码"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        app:input_icon="@drawable/validation"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordText" />
+
+    <Button
+        android:id="@+id/buttonToRegister"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:text="注册"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerText"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <Button
+        android:background="@color/purple_200"
+        android:id="@+id/buttonToRegisterValidation"
+        android:layout_width="130dp"
+        android:layout_height="46dp"
+        android:text="申请验证码"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonToRegister"
+        app:layout_constraintTop_toTopOf="@+id/buttonToRegister"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

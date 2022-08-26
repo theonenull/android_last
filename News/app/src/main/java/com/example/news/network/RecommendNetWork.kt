@@ -1,0 +1,17 @@
+package com.example.news.network
+
+import com.example.news.application.MyApplication
+import com.example.news.classes.OkHttpUtil
+import com.example.news.retrofit.TotalRetrofit
+import okhttp3.OkHttpClient
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+
+object RecommendNetWork {
+    private const val BASE_URL="http://39.107.65.181:8686/"
+    private val retrofit= Retrofit.Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+    val recommendService: TotalRetrofit = retrofit.create(TotalRetrofit::class.java)
+}

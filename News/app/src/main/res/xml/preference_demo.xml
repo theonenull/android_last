@@ -1,0 +1,33 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="Setting"
+        app:title="显示设置">
+
+        <SwitchPreferenceCompat
+            app:key="is_title_bar"
+            app:title="通知栏显示"/>
+        <EditTextPreference
+            app:key="counting"
+            app:title="Counting preference"/>
+
+        <ListPreference
+            app:key="color"
+            app:entries="@array/actionBar_color"
+            app:entryValues="@array/actionBar_color_values"
+            app:title="标题栏颜色"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="help_category"
+        app:title="Help">
+
+        <Preference
+            app:key="feedback"
+            app:summary="Report technical issues or suggest new features"
+            app:title="Send feedback"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

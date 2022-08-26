@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/sign_in"
+            android:icon="@drawable/sign_in"
+            android:title="登录"/>
+
+        <item
+            android:icon="@drawable/sign_out"
+            android:id="@+id/sign_out"
+            android:title="退出登录"/>
+        <item
+            android:icon="@drawable/setting"
+            android:id="@+id/setting"
+            android:title="设置"/>
+        <item
+            android:icon="@drawable/test"
+            android:id="@+id/test"
+            android:title="测试专用"/>
+        <item
+            android:icon="@drawable/identity"
+            android:id="@+id/person"
+            android:title="个人中心"/>
+        <item
+            android:icon="@drawable/announcement"
+            android:id="@+id/announcement"
+            android:title="公告"/>
+</menu>
